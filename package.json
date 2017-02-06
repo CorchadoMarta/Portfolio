@@ -1,0 +1,48 @@
+{
+  "name": "npm-project",
+  "version": "0.0.1",
+  "description": "Mi primer proyecto NPM",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dist/css/*",
+    "build:css": "npm run css && npm run autoprefixer",
+    "watch:css": "onchange src/scss/*.scss -- npm run build:css",
+    "watch:html": "onchange dist/*.html -- npm run serve",
+    "serve": "browser-sync start --server dist --files dist",
+    "dev": "parallelshell 'npm run watch:css' 'npm run serve'",
+    "lint:sass": "sass-lint src/**/*.scss -c -v",
+    "lint": "npm run lint:sass",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davecarter/npm-project.git"
+  },
+  "keywords": [
+    "npm",
+    "boilerplate",
+    "frontend"
+  ],
+  "author": "David G",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davecarter/npm-project/issues"
+  },
+  "homepage": "https://github.com/davecarter/npm-project#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.11.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
+    "node-sass": "^3.4.2",
+    "onchange": "^2.2.0",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.1",
+    "precommit-hook": "^3.0.0",
+    "sass-lint": "^1.5.1"
+  }
+}
