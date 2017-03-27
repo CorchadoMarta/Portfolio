@@ -1,0 +1,212 @@
+.menu{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.hambur {
+    display: none;
+    /* Small */
+    @media(max-width:991px){
+        display: block;
+        font-size: 4em;
+        padding: 10px 0;
+    }
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    z-index: 1;
+    /* Small */
+    @media(max-width:991px){
+        display: none;
+    }
+}
+.logo-small{
+    display: none;
+    /* Small */
+    @media(max-width:991px){
+        display: block;
+        z-index: 1;
+        width: 75px;
+    }
+}
+
+.navbar{
+    display: flex;
+    padding: 0 20px;
+    color: #000;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px 0;
+    width: 100%;
+    background-color: #fff;
+    a {
+        color: #000;
+        text-align: right;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            padding: 0 25px;
+            color: #000;
+            text-align: right;
+        }
+        li:before {
+            content: "";
+        }
+        li :hover{
+            border-bottom: 3px solid #000;
+        }
+    }
+    /* Small */
+    @media(max-width:991px){
+        ul {
+            display: none;
+            flex-direction: column;
+            li {
+                padding: 25px 10px;
+                color: #000;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.nav-btn{
+  margin: 20px 20px 0;
+  float: right;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  /* Small */
+  @media(max-width:991px){
+    display: none;
+  }
+}
+  .nav-btn-mobile {
+    display: none;
+    /* Small */
+    @media(max-width:991px){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      text-align: right;
+      margin: 15px 0;
+    }
+  }
+  .btn-red {
+    margin: 5px;
+    color: #FA4949;
+    border: 1px solid #FA4949;
+    padding: 5px 10px;
+    text-decoration: none;
+    img {
+      width: 11px;
+    }
+    @media(max-width:991px){
+      padding: 9px 15px;
+    }
+  }
+  #tickets-red{
+    color: #FA4949;
+  }
+  #tickets-red:hover {
+    margin: 5px;
+    color: white;
+    background-color: red;
+    border: 1px solid #FA4949;
+    padding: 5px 10px;
+    text-decoration: none;
+    img {
+      width: 11px;
+    }
+    @media(max-width:991px){
+      padding: 9px 15px;
+    }
+  }
+  .btn-red:hover {
+    margin: 5px;
+    color: white;
+    background-color: red;
+    border: 1px solid #FA4949;
+    padding: 5px 10px;
+    text-decoration: none;
+    img {
+      width: 11px;
+    }
+    @media(max-width:991px){
+      padding: 9px 15px;
+    }
+  }
+
+
+  .btn-blck{
+    margin: 5px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    img {
+      width: 11px;
+    }
+    @media(max-width:991px){
+      padding: 9px 15px;
+    }
+    /* Small */
+    @media(max-width:767px){
+      display: none;
+    }
+  }
+
+  .btn-blck:hover{
+    margin: 5px;
+    color: white;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-decoration:none;
+    img {
+      width: 11px;
+    }
+    @media(max-width:991px){
+      padding: 9px 15px;
+    }
+    /* Small */
+    @media(max-width:767px){
+      display: none;
+    }
+  }
+
+  #red{
+    color:#FA4949;
+    }
+
+
+#active-expos {
+    border-bottom: 3px solid #0088A0;
+}
+
+#active-tickets {
+    border-bottom: 3px solid #FA4949;
+}
+
+#active-alquiler {
+    border-bottom: 3px solid #BBB7B0;
+}
+
+#active-sobre-el-museo {
+    border-bottom: 3px solid #7F1786;
+}
+
+#active-actividades {
+    border-bottom: 3px solid #D5AB55;
+}

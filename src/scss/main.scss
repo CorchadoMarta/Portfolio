@@ -1,8 +1,6 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  
-  h1 {
-    font-weight: bold;
-  }
-}
+@import 'normalize';
+@import 'tipografia';
+@import 'styles';
+@import 'menu';
+@import 'grid';
+@import 'footer';
