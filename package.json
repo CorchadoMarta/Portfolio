@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davecarter/npm-project.git"
+    "url": "git+https://github.com/CorchadoMarta/Portfolio"
   },
   "keywords": [
     "npm",
@@ -37,10 +37,6 @@
   ],
   "author": "Marta Corchado",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/davecarter/npm-project/issues"
-  },
-  "homepage": "https://github.com/davecarter/npm-project#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.2",
