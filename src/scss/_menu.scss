@@ -1,212 +1,204 @@
-.menu{
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #fff;
-  z-index: 100;
+#miNombre {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  float: left;
+  position: absolute;
+  margin: 0;
+  padding: 28px 25px;
+  z-index: 99999;
+
+  a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: $verde;
+  }
+  a:visited {
+    text-decoration: none;
+    color: $verde;
+  }
+  img {
+    width: 40px;
+    margin: 0 15px;
+  }
+
+  @media(max-width:767px){
+    font-size: 1em;
+    img {
+      width: 30px;
+    }
+  }
+
 }
 
-.hambur {
-    display: none;
-    /* Small */
-    @media(max-width:991px){
-        display: block;
-        font-size: 4em;
-        padding: 10px 0;
-    }
-}
-
-.logo{
-    float: left;
-    width: 200px;
-    z-index: 1;
-    /* Small */
-    @media(max-width:991px){
-        display: none;
-    }
-}
-.logo-small{
-    display: none;
-    /* Small */
-    @media(max-width:991px){
-        display: block;
-        z-index: 1;
-        width: 75px;
-    }
-}
-
-.navbar{
-    display: flex;
-    padding: 0 20px;
-    color: #000;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 15px 0;
-    width: 100%;
-    background-color: #fff;
-    a {
-        color: #000;
-        text-align: right;
-    }
-    ul {
-        list-style: none;
-        display: flex;
-        li {
-            padding: 0 25px;
-            color: #000;
-            text-align: right;
-        }
-        li:before {
-            content: "";
-        }
-        li :hover{
-            border-bottom: 3px solid #000;
-        }
-    }
-    /* Small */
-    @media(max-width:991px){
-        ul {
-            display: none;
-            flex-direction: column;
-            li {
-                padding: 25px 10px;
-                color: #000;
-                text-align: right;
-            }
-        }
-    }
-}
-
-.nav-btn{
-  margin: 20px 20px 0;
-  float: right;
-  width: 100%;
+.header {
   position: relative;
-  text-align: right;
-  /* Small */
-  @media(max-width:991px){
+  background: rgba(255, 255, 255, .95);
+  padding: 15px;
+  height: 100px;
+
+  ul.header__links {
     display: none;
-  }
-}
-  .nav-btn-mobile {
-    display: none;
-    /* Small */
-    @media(max-width:991px){
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      text-align: right;
-      margin: 15px 0;
-    }
-  }
-  .btn-red {
-    margin: 5px;
-    color: #FA4949;
-    border: 1px solid #FA4949;
-    padding: 5px 10px;
-    text-decoration: none;
-    img {
-      width: 11px;
-    }
-    @media(max-width:991px){
-      padding: 9px 15px;
-    }
-  }
-  #tickets-red{
-    color: #FA4949;
-  }
-  #tickets-red:hover {
-    margin: 5px;
-    color: white;
-    background-color: red;
-    border: 1px solid #FA4949;
-    padding: 5px 10px;
-    text-decoration: none;
-    img {
-      width: 11px;
-    }
-    @media(max-width:991px){
-      padding: 9px 15px;
-    }
-  }
-  .btn-red:hover {
-    margin: 5px;
-    color: white;
-    background-color: red;
-    border: 1px solid #FA4949;
-    padding: 5px 10px;
-    text-decoration: none;
-    img {
-      width: 11px;
-    }
-    @media(max-width:991px){
-      padding: 9px 15px;
-    }
-  }
+		visibility: hidden;
+    width: 95%;
+    text-align: right;
 
-
-  .btn-blck{
-    margin: 5px;
-    color: #000;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    text-decoration: none;
-    img {
-      width: 11px;
-    }
-    @media(max-width:991px){
-      padding: 9px 15px;
-    }
-    /* Small */
-    @media(max-width:767px){
-      display: none;
-    }
-  }
-
-  .btn-blck:hover{
-    margin: 5px;
-    color: white;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    text-decoration:none;
-    img {
-      width: 11px;
-    }
-    @media(max-width:991px){
-      padding: 9px 15px;
-    }
-    /* Small */
-    @media(max-width:767px){
-      display: none;
-    }
-  }
-
-  #red{
-    color:#FA4949;
+    @media (min-width: 840px) {
+      display: inline-block;
+			visibility: visible;
     }
 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 0;
+    padding: 0;
 
-#active-expos {
-    border-bottom: 3px solid #0088A0;
+    li {
+				display: inline-block;
+				color: $verde;
+
+				a {
+					display: block;
+					color: $verde;
+					font-size:0.9em;
+					text-decoration: none;
+					padding: 13px 15px;
+
+					&:hover {
+						color: $rojo;
+            text-decoration: underline;
+					}
+				}
+        @media(max-width:839px){
+            font-size:1.1em;
+        }
+			}
+  }
+
+  // Responsive Nav cuando se expande
+
+	.show-nav & {
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: block;
+		transform: translate3d(0, 0, 0);
+
+	   	-webkit-touch-callout: none;
+	    	user-select: none;
+
+		height: 100%;
+		width: 100%;
+		text-align: center;
+
+		z-index: 0;
+		margin: 0;
+		float: none;
+		z-index: 9999;
+
+		.header__links {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+			opacity: 0;
+			transition: all 500ms linear;
+			display: block;
+			visibility: visible;
+
+			&.show {
+				opacity: 1;
+			}
+
+			li {
+				display: block;
+				margin: 25px 0;
+				margin-right: 0;
+				float: none;
+        text-align: center;
+			}
+		}
+
+	}
+
 }
 
-#active-tickets {
-    border-bottom: 3px solid #FA4949;
+// Responsive Menu
+
+.menu-btn {
+	position: absolute;
+	z-index: 10;
+	top: 27px;
+	right: 15px;
+	display: inline-block;
+  text-indent: -9999px;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+
+	transform: rotate(0deg);
+	transition: all, 0.25s, ease-in-out;
+	cursor: pointer;
+
+	@media (min-width: 840px) {
+		display: none;
+		visibility: hidden;
+	}
+
+    span {
+	    display: block;
+	    position: absolute;
+	    height: 2px;
+	    width: 100%;
+	    background: $verde;
+	    opacity: 1;
+	    left: 0;
+		border-radius: 3px;
+		transform: rotate(0deg);
+		transition: all, 0.25s, ease-in-out;
+    }
+
+  @media (min-width: 840px) {
+		display: none;
+		visibility: hidden;
+	}
 }
 
-#active-alquiler {
-    border-bottom: 3px solid #BBB7B0;
+.menu-btn span:nth-child(1) {
+  top: 0px;
 }
 
-#active-sobre-el-museo {
-    border-bottom: 3px solid #7F1786;
+.menu-btn span:nth-child(2),
+.menu-btn span:nth-child(3) {
+  top: 10px;
 }
 
-#active-actividades {
-    border-bottom: 3px solid #D5AB55;
+.menu-btn span:nth-child(4) {
+  top: 20px;
+}
+
+.menu-btn.open span:nth-child(1),
+.menu-btn.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu-btn.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+// Evita que el contenido se mueva atras
+body.show-nav {
+	overflow: hidden;
 }

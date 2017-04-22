@@ -1,0 +1,11 @@
+// Colores
+$verde: #003B42;
+$azul: #3A949E;
+$rojo: #BC3A24;
+$rosa: #E46568;
+$blanco: #fff;
+$negro: #000;
+
+@mixin text {
+  font-size: 2em;
+}
