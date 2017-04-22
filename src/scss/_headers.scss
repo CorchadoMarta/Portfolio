@@ -1,0 +1,83 @@
+.cabecera-home {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+
+  .cabecera-home:nth-child(1) {
+    color: $rosa;
+    font-size: 0.8em;
+    text-align: center;
+    img {
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .cabecera-home:nth-child(2) {
+    color: $verde;
+    font-size: 7em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0;
+    @media(max-width:767px) {
+      font-size: 6em;
+    }
+    p {
+      transform:rotate(270deg);
+      padding-right: 210px;
+      @media(max-width:767px) {
+        span{
+          display: none;
+        }
+    	}
+    }
+  }
+  .cabecera-home:nth-child(3){
+    color: $rosa;
+    font-size: 7em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0;
+    @media(max-width:767px) {
+      font-size: 6em;
+      height: 100px;
+    }
+    p {
+      transform:rotate(270deg);
+      padding-left: 360px;
+      padding-top: 220px;
+      @media(max-width:767px) {
+        padding-left: 185px;
+        padding-top: 205px;
+      }
+    }
+  }
+  .cabecera-home:nth-child(4) {
+    color: $verde;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .cabecera-home:nth-child(5) {
+    color:$verde;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.titulo-seccion-corto {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  @media(max-width:767px) {
+    width: 100%;
+  }
+}
+
+.titulo-seccion-largo {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  @media(max-width:767px) {
+    width: 100%;
+  }
+}

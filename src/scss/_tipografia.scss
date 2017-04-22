@@ -21,14 +21,68 @@ strong {
   font-weight: 700;
 }
 
-/* Small */
-@media(max-width:767px){
-
-
+h2 {
+  font-family: 'Droid Sans', sans-serif;
+  text-transform: uppercase;
+  color: $verde;
+  font-size: 5em;
+  margin: 0;
+  line-height: 0.8em;
 }
 
-/* Medium */
-@media(min-width:768px) and (max-width:991px){
+h3 {
+  font-family: 'Droid Sans', sans-serif;
+  color: $rosa;
+  font-size: 1.2em;
+  margin: 0;
+}
 
+h4 {
+  font-family: 'Droid Sans', sans-serif;
+  color: $azul;
+  font-size: 1em;
+  margin: 0;
+  text-align: right;
+}
 
+p{
+  color: $verde;
+}
+
+@media(max-width:640px) {
+  .numero-proyecto {
+    display: none;
+  }
+}
+
+.numeracion {
+  color: $rosa;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 7em;
+  margin: 49px 47px;
+  text-align: right;
+  @media(max-width:767px) {
+    margin: 49px 0 0;
+    text-align: left;
+  }
+
+}
+.vertical-text {
+  font-family: 'Droid Sans', sans-serif;
+  color: $verde;
+  font-size: 16px;
+  text-transform: uppercase;
+  transform:rotate(270deg);
+  width: 95px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  margin: 35px 0;
+  @media(max-width:767px) {
+    transform:rotate(0deg);
+    width: 95px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
 }
