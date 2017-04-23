@@ -30,6 +30,12 @@ h2 {
   line-height: 0.8em;
 }
 
+@media(max-width:768px) {
+  #tl-largo {
+    font-size: 11vw;
+  }
+}
+
 h3 {
   font-family: 'Droid Sans', sans-serif;
   color: $rosa;

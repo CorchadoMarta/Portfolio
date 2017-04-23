@@ -1,10 +1,14 @@
 .container-flex {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: row;
   padding: 20px 0;
+  justify-content: center;
+  @media(max-width:768px) {
+    width: 90%;
+  }
   @media(max-width:640px) {
     width: 100%;
     flex-direction: column;
@@ -13,5 +17,28 @@
 }
 
 .content-flex {
+}
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -140px;
+  @media(max-width:640px) {
+    width: 100%;
+    padding: 15px;
+    margin-top: 0;
+  }
+}
+
+.w20 {
+  width: 20%;
+  top: 80px;
+  position: relative;
+  @media(max-width:768px) {
+    width: 100%;
+    padding: 0 20px;
+    top: 0;
+    margin: 0 auto;
+  }
 }
