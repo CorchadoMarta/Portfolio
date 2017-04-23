@@ -96,9 +96,16 @@
   }
 }
 
-#image7 {
-  box-shadow: 0px 0px 8px #888888;
-  display: inline-block;
-  position: relative;
-  width: 100%;
+.images-profile {
+  text-align: center;
+  #image7 {
+    box-shadow: 0px 0px 8px #888888;
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    @media(max-width:1024px) {
+      width: 100%;
+    }
+  }
 }

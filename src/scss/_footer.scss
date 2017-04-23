@@ -21,7 +21,10 @@
     display: inline-block;
     float: right;
     margin: 10px 0;
+    @media(max-width:768px) {
+      float: left;
     }
+  }
   a:visited {
     text-decoration: none;
   }
