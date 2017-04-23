@@ -2,7 +2,7 @@
   font-family: 'Droid Sans', sans-serif;
   width: 100%;
   margin: 0 auto;
-
+  display: block;
   .cabecera-home:nth-child(1) {
     color: $rosa;
     font-size: 0.8em;
@@ -64,6 +64,35 @@
   }
 }
 
+//Cabecera estandard
+.cabecera {
+  font-family: 'Droid Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 45px auto;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  line-height: 0;
+  height: 200px;
+  @media(max-width:767px) {
+    font-size: 18vw;
+    height: auto;
+  }
+  .cabecera:nth-child(1) {
+    position: relative;
+    color: $verde;
+    line-height: 0;
+    text-align: left;
+  }
+  .cabecera:nth-child(2) {
+    position: relative;
+    color: $rosa;
+    line-height: 0;
+    text-align: right;
+  }
+}
+
+//Titulos de secciones
 .titulo-seccion-corto {
   width: 300px;
   margin: 0 auto;
