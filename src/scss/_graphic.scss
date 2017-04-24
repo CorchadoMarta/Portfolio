@@ -1,0 +1,37 @@
+.line {
+  width: 100%;
+  height: 10px;
+  line {
+    stroke: $rojo;
+    stroke-width:5;
+  }
+  @media(max-width:640px) {
+    width: 10px;
+    height: 450px;
+  }
+}
+
+.line-horizontal {
+    display: flex;
+    @media(max-width:640px) {
+      display: none;
+    }
+}
+
+.line-vertical {
+    display: none;
+    @media(max-width:640px) {
+      display: flex;
+    }
+}
+
+.bars {
+  .bg {
+    fill: $blanco;
+    stroke-width: 3;
+    stroke: $rojo;
+  }
+  .data {
+    fill: $rojo;
+  }
+}
